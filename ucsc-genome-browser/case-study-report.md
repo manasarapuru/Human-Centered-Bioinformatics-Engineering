@@ -1,6 +1,16 @@
-# Case Study: Reimagining the UCSC Genome Browser Interface
+
+# Reimagining the UCSC Genome Browser Interface
+
+Independent · 2026 · Bioinformatics Tooling
 
 Part of the [Designing for Attention](../README.md) series.
+
+![Status](https://img.shields.io/badge/status-4b5563?style=flat-square): Design Exploration · Tested Concept
+
+Tools: React.js
+
+Links: [Live app](https://genomebrowserdesign.netlify.app/), Feedback Form
+
 
 ## Overview
 
@@ -26,7 +36,7 @@ This project treats that question the same way the [Galaxy case study](../galaxy
 
 [UCSC Genome Browser current interface](https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr7%3A155799529%2D155812871&hgsid=4129256197_sYbaZYTYljuc6ZqS8NyFXAP5PvFB)
 
-Hundreds of track names are exposed simultaneously, grouped into dense tables with minimal visual differentiation between primary and secondary actions.
+Track names are exposed simultaneously, grouped into dense tables with minimal visual differentiation between primary and secondary actions. The current interface can be overwhelming, causing cognitive overload, inefficient navigation, and missed insights due to poor hierarchy and lack of context-aware guidance.
 
 ---
 
@@ -34,17 +44,14 @@ Hundreds of track names are exposed simultaneously, grouped into dense tables wi
 
 Each finding below is mapped to one of Nielsen's usability heuristics (Nielsen, 1994), with a severity rating.
 
-**Visibility of system status, High.** Selected tracks don't visibly refresh upon selection, leaving users unsure whether their action registered at all.
-
-**Recognition rather than recall, High.** Hundreds of tool names are displayed simultaneously, with no way to understand which one to use without prior knowledge of the system.
-
-**Aesthetic and minimalist design, High.** Too many competing calls to action are visible at once, with no visual hierarchy between primary and secondary actions.
-
-**Visibility of system status, Medium.** There's no clear indication of which tracks are currently active. Open and closed states aren't visually distinguishable from one another.
-
-**User control and freedom, Medium.** The toggle system is inconsistent and hard to parse. Users can't easily reverse or compare track selections.
-
-**Help and documentation, Medium.** Sections have no labels or explanations. Users with less domain knowledge have no anchor point for navigation.
+| Heuristic | Ranking | Description |
+| :--- | :---: | :--- |
+|Visibility of system status | High | Selected tracks don't visibly refresh upon selection, leaving users unsure whether their action registered at all.|
+|Recognition rather than recall | High | Hundreds of tool names are displayed simultaneously, with no way to understand which one to use without prior knowledge of the system.|
+|Aesthetic and minimalist design | High | Too many competing calls to action are visible at once, with no visual hierarchy between primary and secondary actions.|
+|Visibility of system status | Medium | There's no clear indication of which tracks are currently active. Open and closed states aren't visually distinguishable from one another.|
+|User control and freedom | Medium | The toggle system is inconsistent and hard to parse. Users can't easily reverse or compare track selections.|
+|Help and documentation | Medium| Sections have no labels or explanations. Users with less domain knowledge have no anchor point for navigation.|
 
 ---
 
